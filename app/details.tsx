@@ -65,7 +65,9 @@ export default function details() {
       contentContainerStyle={{
         gap: 16,
         padding: 16,
+        flexGrow: 1, 
       }}
+      showsVerticalScrollIndicator={false}
     >
 
     <Text style={styles.name}>{pokemonData ? pokemonData.name.toUpperCase() : "Loading..."}</Text>

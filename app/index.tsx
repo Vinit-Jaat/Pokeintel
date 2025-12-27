@@ -1,13 +1,13 @@
 import { Link } from "expo-router";
 import { useEffect, useState } from "react";
 import {
+  ActivityIndicator,
   Image,
   ScrollView,
-  Text,
-  View,
   StyleSheet,
-  ActivityIndicator,
+  Text,
   TextInput,
+  View,
 } from "react-native";
 
 interface Pokemon {
@@ -69,7 +69,7 @@ export default function Index() {
   async function fetchDefaultPokemons() {
     try {
       setLoading(true);
-      const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0");
+      const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=200&offset=0");
       const data = await res.json();
 
       const detailed = await Promise.all(
@@ -128,6 +128,7 @@ export default function Index() {
           value={searchText}
           onChangeText={setSearchText}
           placeholder="Search for a Pokémon"
+          placeholderTextColor={"#555"}
           style={styles.search}
         />
       </View>
