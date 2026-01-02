@@ -1,50 +1,125 @@
-# Welcome to your Expo app 👋
+# Poki Intel (Android APK)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Poki Intel** is a modern **React Native Android application** that allows users to explore Pokémon data in a clean, fast, and intuitive interface. The app fetches real-time data from the official **PokéAPI** and provides detailed statistics for each Pokémon, making it a lightweight yet powerful Pokémon information tool.
 
-## Get started
+Designed with performance, scalability, and readability in mind, Poki Intel demonstrates strong fundamentals in mobile development, API integration, and TypeScript-based architecture.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+* 📜 Browse a complete **Pokémon list**
+* 🔎 **Search Pokémon** by name
+* 📊 View detailed Pokémon **stats**, including:
 
-   ```bash
-   npx expo start
-   ```
+  * Health (HP)
+  * Attack
+  * Defense
+  * Speed
+  * Special Attack
+  * Special Defense
+* 🧩 Clean and reusable component-based UI
+* 📱 Optimized **Android APK** experience
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* **Framework:** React Native
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS (NativeWind)
+* **API:** PokéAPI ([https://pokeapi.co/](https://pokeapi.co/))
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📸 Screenshots
 
-```bash
-npm run reset-project
+### App Screens
+
+| Pokémon List                  | Search                            | Pokémon Details                     |
+| ----------------------------- | --------------------------------- | ----------------------------------- |
+| ![List](screenshots/home.jpeg) | ![Search](screenshots/search.jpeg) | ![Details](screenshots/details.jpeg) |
+
+
+
+
+<!-- ### Option 1: GitHub-hosted Video
+
+
+
+```md
+[▶ Watch Poki Intel Demo](videos/poki-intel-demo.mp4)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+--- -->
 
-## Learn more
+## 🚀 Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+### Prerequisites
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* Node.js
+* npm or yarn
+* Android Studio / Android Emulator
+* React Native CLI
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+### Installation
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+# Clone the repository
+git clone https://github.com/Vinit-Jaat/Pokeintel.git
+
+# Navigate into the project
+cd PokemonApp
+
+# Install dependencies
+npm install
+```
+
+---
+
+### Run on Android
+
+```bash
+npm expo start
+```
+
+---
+
+## 🧩 API Reference
+
+This app uses the **PokéAPI**, a free and open RESTful API providing Pokémon data.
+
+* Pokémon List Endpoint
+* Individual Pokémon Stats Endpoint
+
+Official API documentation:
+[https://pokeapi.co/docs/v2](https://pokeapi.co/docs/v2)
+
+---
+
+## 📌 Future Enhancements
+
+* ❤️ Favorite Pokémon support
+* 📈 Stat comparison between Pokémon
+* 🌙 Dark mode
+* 📶 Offline caching
+
+---
+
+## 🙏 Acknowledgements
+
+* **PokéAPI** for providing open Pokémon data
+* Pokémon is © Nintendo, Game Freak, and Creatures Inc.
+
+---
+
+## 👨‍💻 Author
+
+**Your Name**
+GitHub: [@Vinit](https://github.com/Vinit-Jaat)
+
+---
+
+⭐ If you find this project useful or interesting, feel free to give it a star!
